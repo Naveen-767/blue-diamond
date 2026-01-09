@@ -90,40 +90,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-{/* 
-      <section className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-block mb-4 px-4 py-1.5 bg-blue-800/10 border border-blue-800/30 rounded-full">
-              <span className="text-blue-800 text-sm font-semibold tracking-wider">
-                ENHANCE YOUR EXPERIENCE
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Add-On <span className="text-blue-800">Services</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {addons.map((addon, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-zinc-900 to-black border border-blue-800/20 rounded-xl p-6 hover:border-blue-800/50 transition-all duration-300 group"
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
-                }}
-              >
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-800 transition-colors">
-                  {addon.name}
-                </h3>
-                <p className="text-2xl font-bold text-blue-800">{addon.price}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
- */}
       <section className="py-20 bg-gradient-to-b from-zinc-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-gradient-to-r from-blue-800/10 to-blue-600/10 border border-blue-800/20 rounded-2xl p-12 md:p-16">

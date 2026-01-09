@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
-  // { name: 'Offers', path: '/offers' },
+  { name: 'Style', path: '/gallery' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -108,7 +108,7 @@ export default function Navbar() {
               className={cn(
                 'block px-4 py-3 rounded-lg transition-all duration-300',
                 pathname === link.path
-                  ? 'bg-blue-800/10 text-blue-800bg-blue-800 border-l-4 border-blue-800bg-blue-800'
+                  ? 'bg-blue-800/10 text-gray-300  border-l-4 border-blue-800 bg-blue-800'
                   : 'text-gray-300 hover:bg-white/5 hover:text-white border-l-4 border-transparent'
               )}
             >
