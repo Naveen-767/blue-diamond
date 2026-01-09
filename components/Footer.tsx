@@ -48,8 +48,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/offers" className="hover:text-blue-800 transition-colors">
-                  Special Offers
+                <Link href="/contact" className="hover:text-blue-800 transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -70,15 +70,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-800 mt-0.5 flex-shrink-0" />
-                <span className="text-sm">123 Style Street, Fashion District, NY 10001</span>
+                <span className="text-sm">No 3/115, Near Signal, East Coast Road, Vettuvankeni, Chennai-600115, Tamil Nadu</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-800 flex-shrink-0" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 8056111141</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-800 flex-shrink-0" />
-                <span className="text-sm">info@elitecuts.com</span>
+                <span className="text-sm">bluediamondsaloonmens@gmail.com</span>
               </li>
             </ul>
           </div>

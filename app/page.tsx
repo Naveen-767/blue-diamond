@@ -7,25 +7,22 @@ import Link from 'next/link';
 
 const featuredServices = [
   {
-    icon: Scissors,
-    title: 'Premium Haircut',
-    description: 'Expert precision cuts tailored to your style and face shape',
-    // price: '$45',
-    features: ['Consultation', 'Wash & Cut', 'Styling'],
+    title: 'Haircut & Styling',
+    description: 'Precision haircuts tailored to your face shape and personal style.',
+    image: '/services/haircut.jpg',
+    features: ['Style Consultation', 'Wash & Cut', 'Professional Styling'],
   },
   {
-    icon: Sparkles,
     title: 'Beard Grooming',
-    description: 'Professional beard trim, shape, and conditioning treatment',
-    // price: '$30',
-    features: ['Hot Towel', 'Trim & Shape', 'Beard Oil'],
+    description: 'Expert beard trimming, shaping, and conditioning.',
+    image: '/services/beard.jpg',
+    features: ['Hot Towel Treatment', 'Trim & Shape', 'Premium Beard Oil'],
   },
   {
-    icon: Palette,
-    title: 'Hair Coloring',
-    description: 'Modern color techniques for a fresh, natural look',
-    // price: '$75',
-    features: ['Color Consultation', 'Application', 'Aftercare'],
+    title: 'Facial ',
+    description: 'Refreshing facial treatment to cleanse and hydrate your skin.',
+    image: '/services/facial.jpg',
+    features: ['Deep Cleansing', 'Exfoliation', 'Moisturizing'],
   },
 ];
 
@@ -71,8 +68,8 @@ export default function Home() {
                 WHAT WE OFFER
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Premium <span className="text-blue-800">Services</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+              Premium <span className="text-gray-300">Services</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Experience the finest grooming services tailored for the modern gentleman
@@ -113,19 +110,19 @@ export default function Home() {
                   WHY CHOOSE US
                 </span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Excellence in Every <span className="text-blue-800">Detail</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-6">
+                Excellence in Every <span className="text-gray-300">Detail</span>
               </h2>
               <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                At EliteCuts, we believe grooming is an art. Our master barbers combine traditional techniques with modern styles to deliver exceptional results every time.
+               At <span className="text-blue-800">Blue</span><span className="text-gray-300">Diamond</span>, we believe grooming is an art form. Since 1992, our master barbers have been combining classic techniques with modern styles to deliver exceptional results every time.
               </p>
 
               <div className="space-y-4">
                 {[
-                  'Expert barbers with 15+ years experience',
-                  'Premium quality products and tools',
-                  'Comfortable and luxurious environment',
-                  'Personalized consultations for every client',
+                  'Expert Barbers with 15+ years of experience',
+                  'Premium Quality Products & Tools for flawless results',
+                  'Comfortable & Luxurious Environment to relax and unwind',
+                  'Personalized Consultations tailored to each client’s style and needs',
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="flex-shrink-0 w-6 h-6 bg-blue-800/20 rounded-full flex items-center justify-center">

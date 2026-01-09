@@ -7,22 +7,22 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    details: ['123 Style Street', 'Fashion District', 'New York, NY 10001'],
+    details: ['No 3/115, Near Signal, East Coast Road, Vettuvankeni, Chennai-600115, Tamil Nadu'],
   },
   {
     icon: Phone,
     title: 'Call Us',
-    details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+    details: ['+91 8056111141'],
   },
   {
     icon: Mail,
     title: 'Email Us',
-    details: ['info@elitecuts.com', 'bookings@elitecuts.com'],
+    details: ['bluediamondsaloonmens@gmail'],
   },
   {
     icon: Clock,
     title: 'Hours',
-    details: ['Mon-Fri: 9:00 AM - 8:00 PM', 'Sat-Sun: 10:00 AM - 6:00 PM'],
+    details: ['Mon-Fri: 7:00 AM - 9:00 PM', 'Sat-Sun: 6:30 AM - 10:00 PM'],
   },
 ];
 
@@ -63,8 +63,8 @@ export default function Contact() {
               GET IN TOUCH
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Contact <span className="text-blue-800">Us</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-blue-800 mb-6">
+            Contact <span className="text-gray-300">Us</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Book your appointment or reach out with any questions
@@ -104,8 +104,8 @@ export default function Contact() {
                     BOOK NOW
                   </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  Schedule Your <span className="text-blue-800">Appointment</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+                  Schedule Your <span className="text-gray-300">Appointment</span>
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
                   Fill out the form and we'll get back to you within 24 hours to confirm your booking.
@@ -158,7 +158,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-zinc-900 border border-blue-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-800 transition-colors"
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+91 9876543210"
                     />
                   </div>
                 </div>
@@ -177,10 +177,14 @@ export default function Contact() {
                       className="w-full px-4 py-3 bg-zinc-900 border border-blue-800/20 rounded-lg text-white focus:outline-none focus:border-blue-800 transition-colors"
                     >
                       <option value="">Select a service</option>
-                      <option value="haircut">Premium Haircut</option>
-                      <option value="beard">Beard Grooming</option>
-                      <option value="coloring">Hair Coloring</option>
-                      <option value="package">Full Grooming Package</option>
+                      <option value="Haircut & Styling">Haircut & Styling</option>
+                      <option value="Beard Grooming">Beard Grooming</option>
+                      <option value="Hair Coloring">Hair Coloring</option>
+                      <option value="Facial">Facial</option>
+                      <option value="Hair Straightening & Curling">Hair Straightening & Curling</option>
+                      <option value="Head Massage & Oil Treatment">Head Massage & Oil Treatment</option>
+                      <option value="Others">Others</option>
+
                     </select>
                   </div>
 
@@ -224,17 +228,35 @@ export default function Contact() {
                 </button>
               </form>
             </div>
+            <div className="relative h-[600px] rounded-xl overflow-hidden border border-blue-800/30">
+              {/* Buttons */}
+              <div className="absolute top-4 right-4 z-20 flex gap-3">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=12.938681,80.252754"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-800 text-black font-semibold rounded-lg hover:bg-blue-600 transition"
+                >
+                  Get Directions
+                </a>
 
-            <div className="relative h-[600px] rounded-xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=12.938681,80.252754"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-zinc-900 text-white border border-blue-800/40 rounded-lg hover:bg-zinc-800 transition"
+                >
+                  Open in Maps
+                </a>
+              </div>
+
+              {/* Map */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635959520361!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d243.03236524711355!2d80.25275401411493!3d12.93868104219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU2JzE5LjQiTiA4MMKwMTUnMDkuMyJF!5e0!3m2!1sen!2sin!4v1767971902963!5m2!1sen!2sin"
+                className="w-full h-full"
                 style={{ border: 0 }}
-                allowFullScreen
                 loading="lazy"
-                className="relative z-0"
+                allowFullScreen
               />
             </div>
           </div>

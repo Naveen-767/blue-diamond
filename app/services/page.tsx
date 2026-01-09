@@ -4,47 +4,41 @@ import ServiceCard from '@/components/ServiceCard';
 import { Scissors, Sparkles, Palette, Waves, Zap, Star } from 'lucide-react';
 
 const services = [
-  {
-    icon: Scissors,
-    title: 'Classic Haircut',
-    description: 'Traditional barbering techniques combined with modern styling for a timeless look',
-    price: '$35',
-    features: ['Style Consultation', 'Precision Cut', 'Wash & Dry', 'Basic Styling'],
+   {
+    title: 'Haircut & Styling',
+    description: 'Precision haircuts tailored to your face shape and personal style.',
+    image: '/services/haircut.jpg',
+    features: ['Style Consultation', 'Wash & Cut', 'Professional Styling'],
   },
   {
-    icon: Star,
-    title: 'Premium Haircut',
-    description: 'Our signature service with extended consultation and premium product application',
-    price: '$45',
-    features: ['In-depth Consultation', 'Premium Cut', 'Hot Towel Treatment', 'Advanced Styling'],
+    title: 'Beard Grooming',
+    description: 'Expert beard trimming, shaping, and conditioning.',
+    image: '/services/beard.jpg',
+    features: ['Hot Towel Treatment', 'Trim & Shape', 'Premium Beard Oil'],
   },
   {
-    icon: Sparkles,
-    title: 'Beard Trim',
-    description: 'Expert beard shaping and grooming to complement your facial features',
-    price: '$25',
-    features: ['Beard Analysis', 'Precision Trim', 'Edge Definition', 'Beard Oil Application'],
+    title: 'Facial',
+    description: 'Refreshing facial treatment to cleanse and hydrate your skin.',
+    image: '/services/facial.jpg',
+    features: ['Deep Cleansing', 'Exfoliation', 'Moisturizing'],
   },
   {
-    icon: Waves,
-    title: 'Full Grooming Package',
-    description: 'Complete grooming experience including haircut, beard trim, and facial treatment',
-    price: '$80',
-    features: ['Haircut & Style', 'Beard Grooming', 'Facial Treatment', 'Neck Shave'],
+    title: 'Hair Straightening & Curling',
+    description: 'Professional hair straightening and curling to achieve the perfect look.',
+    image: '/services/straightening_curling.jpg',
+    features: ['Heat Styling', 'Smoothing Treatment', 'Long-Lasting Hold'],
   },
   {
-    icon: Palette,
+    title: 'Head Massage & Oil Treatment',
+    description: 'Relaxing head massage with nourishing oils to strengthen hair and reduce stress.',
+    image: '/services/head_massage.png',
+    features: ['Oil Application', 'Scalp Massage', 'Hair Nourishment'],
+  },
+  {
     title: 'Hair Coloring',
-    description: 'Professional coloring service to enhance or completely transform your look',
-    price: '$75',
-    features: ['Color Consultation', 'Application', 'Toning', 'Aftercare Kit'],
-  },
-  {
-    icon: Zap,
-    title: 'Scalp Treatment',
-    description: 'Revitalizing scalp massage and treatment for healthy hair growth',
-    price: '$40',
-    features: ['Scalp Analysis', 'Deep Massage', 'Treatment Application', 'Steam Therapy'],
+    description: 'Modern hair coloring techniques for a fresh, natural, and vibrant look.',
+    image: '/services/hair_coloring.jpg',
+    features: ['Color Consultation', 'Application', 'Aftercare Advice'],
   },
 ];
 
@@ -71,8 +65,8 @@ export default function Services() {
               PREMIUM SERVICES
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Our <span className="text-blue-800">Services</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-blue-800 mb-6">
+            Our <span className="text-gray-300">Services</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Exceptional grooming services crafted for the modern gentleman

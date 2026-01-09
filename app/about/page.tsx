@@ -1,6 +1,7 @@
 'use client';
 
 import { Award, Target, Heart, Users, TrendingUp, Shield } from 'lucide-react';
+import Image from 'next/image';
 
 const values = [
   {
@@ -37,23 +38,23 @@ const values = [
 
 const team = [
   {
-    name: 'Marcus Steel',
+    name: 'Ganesh',
     role: 'Master Barber',
-    experience: '15 Years',
-    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+    experience: '16 Years',
+    image: '/team/ganesh.jpeg',
   },
-  {
-    name: 'James Carter',
-    role: 'Senior Stylist',
-    experience: '12 Years',
-    image: 'https://images.pexels.com/photos/1222273/pexels-photo-1222273.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    name: 'David Brooks',
-    role: 'Color Specialist',
-    experience: '10 Years',
-    image: 'https://images.pexels.com/photos/1222275/pexels-photo-1222275.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
+  // {
+  //   name: 'James Carter',
+  //   role: 'Senior Stylist',
+  //   experience: '12 Years',
+  //   image: 'https://images.pexels.com/photos/1222273/pexels-photo-1222273.jpeg?auto=compress&cs=tinysrgb&w=400',
+  // },
+  // {
+  //   name: 'David Brooks',
+  //   role: 'Color Specialist',
+  //   experience: '10 Years',
+  //   image: 'https://images.pexels.com/photos/1222275/pexels-photo-1222275.jpeg?auto=compress&cs=tinysrgb&w=400',
+  // },
 ];
 
 export default function About() {
@@ -72,11 +73,11 @@ export default function About() {
               OUR STORY
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            About <span className="text-blue-800">EliteCuts</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-blue-800 mb-6">
+            About <span className="text-gray-300">BlueDiamond</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Crafting excellence in men's grooming since 2008
+            Crafting excellence in men's grooming since 2000
           </p>
         </div>
       </div>
@@ -85,17 +86,17 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Our <span className="text-blue-800">Journey</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-6">
+                Our <span className="text-gray-300">Journey</span>
               </h2>
               <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-                Founded in 2008, EliteCuts began with a simple vision: to create a grooming experience that combines traditional barbering excellence with modern style and comfort.
+                Founded in 1992, <span className="text-blue-800 font-semibold">Blue</span><span className="text-gray-300 font-semibold">Diamond</span> was established with a clear purpose: to deliver exceptional grooming services that blend classic barbering techniques with modern style and precision.
               </p>
               <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-                Over the years, we've grown from a small neighborhood barbershop to a premier destination for men's grooming, serving over 10,000 satisfied clients and building a reputation for exceptional service and attention to detail.
+                What began as a trusted local barbershop has grown into a respected grooming destination, serving generations of loyal clients. Our reputation is built on quality craftsmanship, personalized service, and attention to detail.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Today, we continue to uphold our commitment to excellence, staying at the forefront of grooming trends while maintaining the timeless traditions that make us unique.
+                Today, <span className="text-blue-800 font-semibold">Blue</span><span className="text-gray-300 font-semibold">Diamond</span> continues to set the standard in men’s grooming—offering premium haircuts, beard styling, and complete grooming solutions while honoring the traditions that define our legacy.
               </p>
             </div>
             <div className="relative">
@@ -118,8 +119,8 @@ export default function About() {
                 WHAT WE STAND FOR
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Our <span className="text-blue-800">Values</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+              Our <span className="text-gray-300">Values</span>
             </h2>
           </div>
 
@@ -155,15 +156,15 @@ export default function About() {
                 MEET THE EXPERTS
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Our <span className="text-blue-800">Master Barbers</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+              Our <span className="text-gray-300">Master Barbers</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Experienced professionals dedicated to making you look your best
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* <div className="flex justify-center"> */}
+          <div className="flex justify-center">
             {team.map((member, index) => (
               <div
                 key={index}
@@ -172,25 +173,34 @@ export default function About() {
                   animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
                 }}
               >
-                <div className="relative h-80 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                <div className="group relative bg-gradient-to-br from-zinc-900 to-black border border-blue-800/20 rounded-xl overflow-hidden">
+                  <div className="relative h-80 overflow-hidden py-16">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                  </div>
+
+                  <div className="p-6 text-center">
+                    <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-blue-800 transition">
+                      {member.name}
+                    </h3>
+                    <p className="text-blue-800 font-semibold">{member.role}</p>
+                    <p className="text-gray-400 text-sm mt-1">
+                      {member.experience} Experience
+                    </p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-800 transition-colors duration-300">
-                    {member.name}
-                  </h3>
-                  <p className="text-blue-800 font-semibold mb-2">{member.role}</p>
-                  <p className="text-gray-400">{member.experience} Experience</p>
-                </div>
+
               </div>
             ))}
           </div>
         </div>
+        {/* </div> */}
       </section>
 
       <style jsx>{`
