@@ -4,25 +4,15 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'EliteCuts - Premium Men\'s Salon & Grooming',
+  title: 'Blue Diamond Saloon',
   description: 'Experience excellence in men\'s grooming with expert barbers, premium services, and modern styling.',
-  openGraph: {
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+  
+   icons: {
+    icon: "/favicon.ico",
   },
 };
 
