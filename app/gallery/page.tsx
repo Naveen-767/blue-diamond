@@ -3,16 +3,22 @@ import Image from "next/image";
 import { useState } from "react";
 
 
-const styles = [
-  { id: 1, name: "Classic Fade", img: "", desc: "Clean fade with sharp edges" },
-  { id: 2, name: "Modern Pompadour", img: "", desc: "Volume-focused modern look" },
-  { id: 3, name: "Beard Styling", img: "", desc: "Precision beard shaping" },
-  { id: 4, name: "Crew Cut", img: "", desc: "Short and professional" },
-  { id: 5, name: "Hair Coloring", img: "", desc: "Premium hair coloring" },
-  { id: 6, name: "Luxury Shave", img: "", desc: "Smooth traditional shave" },
-  { id: 7, name: "Textured Crop", img: "", desc: "Trendy textured style" },
-  { id: 8, name: "Skin Fade", img: "", desc: "Ultra clean skin fade" },
+
+ const styles = [
+  { id: 1, name: "Wolf Cut", img: "" },
+  { id: 2, name: "Mullet", img: "" },
+  { id: 3, name: "Wavy Hair", img: "" },
+  { id: 4, name: "Korean Perm", img: "" },
+  { id: 5, name: "Fringe Cut", img: "" },
+  { id: 6, name: "Pompadour", img: "" },
+  { id: 7, name: "Faux Hawk", img: "" },
+  { id: 8, name: "Spiky Hair", img: "" },
+  { id: 9, name: "Fade Cut", img: "" },
+  { id: 10, name: "Quiff", img: "" },
+  { id: 11, name: "Undercut", img: "" },  
+  { id: 12, name: "Textured Crop", img: "" }
 ];
+
 
 export default function GalleryPage() {
   const [openId, setOpenId] = useState<number | null>(null);
@@ -29,14 +35,14 @@ export default function GalleryPage() {
         <div className="relative text-center px-4">
           <div className="inline-block mb-4 px-4 py-1.5 bg-blue-800/10 border border-blue-800/30 rounded-full">
             <span className="text-blue-800 text-sm font-semibold tracking-wider">
-              PREMIUM SERVICES
+              Style Gallery
             </span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-blue-800 mb-6">
-            Our <span className="text-gray-300">Services</span>
+            Pick Your <span className="text-gray-300"> Next Look</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Exceptional grooming services crafted for the modern gentleman
+           Explore expertly crafted hair and beard styles. Tap a look to see details and make it yours.
           </p>
         </div>
       </div>
@@ -65,7 +71,7 @@ export default function GalleryPage() {
               </button>
 
               {/* Collapse content */}
-              <div
+              {/* <div
                 className={`overflow-hidden transition-all duration-300 ${
                   openId === style.id ? "max-h-40 p-4" : "max-h-0 p-0"
                 }`}
@@ -74,7 +80,7 @@ export default function GalleryPage() {
                 <button className="mt-3 w-full rounded-lg bg-yellow-500 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-400">
                   Book This Style
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
